@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* Utilities */
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: var(--primary-color);
+  border: 1px #fff solid;
+  margin-top: 1.5rem;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  transform: scale(0.98);
+}
+
+.text-align {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/img/gym_background.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* Navigation */
+
+.navbar {
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* Showcase */
+
+.showcase {
+  text-align: center;
+  margin-top: 150px;
+  color: #fff;
+}
+
+.showcase h1 {
+  font-size: 3rem;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+/* Information */
+.information {
+  background-color: var(--light-color);
+  padding-bottom: 2rem;
+}
+
+.information .container {
+  margin-bottom: 3rem;
+}
+
+.information > .showcase-text {
+  padding-top: 2.5rem;
+}
+
+.info-text {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.info-text::after {
+  display: block;
+  height: 3px;
+  background-color: var(--primary-color);
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.info-paragraph {
+  text-align: center;
+  padding-top: 1.5rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.info-display > img {
+  height: 217px;
+}
+
+.info-display > h1 {
+  font-weight: 700;
+}
+
+.info-display > p {
+  line-height: 1.6;
+}
+
+.info-display .btn-outline {
+  background-color: var(--secondary-color);
+}
+
+.info-display .btn:hover {
+  background-color: var(--primary-color);
+  transform: scale(0.98);
+}
+
+.info-grid {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+/* Intro Session */
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/img/workout.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  padding: 3rem;
+  color: #fff;
+}
+
+.intro .container {
+  margin-bottom: 3rem;
+}
+
+.intro h1 {
+  padding-top: 2rem;
+}
+
+.intro h1::after {
+  display: block;
+  height: 3px;
+  background-color: var(--primary-color);
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.intro p {
+  padding-top: 1.1rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+.intro .btn-outline {
+  background-color: var(--secondary-color);
+}
+
+.intro .btn:hover {
+  background-color: var(--primary-color);
+  transform: scale(0.98);
+}
+
+/* Services */
+.services {
+  padding: 2rem;
+}
+
+.services .container {
+  padding: 0;
+}
+
+.services h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.services h1::after {
+  display: block;
+  height: 3px;
+  background-color: var(--primary-color);
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 4.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.services-paragraph {
+  text-align: initial;
+  line-height: 1.7;
+}
+
+/* Message */
+.message {
+  padding: 2rem;
+  background-color: var(--light-color);
+}
+
+.message h1 {
+  margin-bottom: 2.5rem;
+}
+
+.message h1::after {
+  display: block;
+  height: 3px;
+  background-color: var(--primary-color);
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.message p {
+  text-align: center;
+}
+
+.message .text-align {
+  margin: 2rem 0;
+}
+/* Social Media */
+
+.media {
+  padding: 2.5rem;
+}
+
+.media h1::after {
+  display: block;
+  height: 3px;
+  background-color: var(--primary-color);
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.media-icons {
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.icons-display {
+  font-size: 6rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-instagram-square {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--light-color);
+}
+
+.footer .footer-nav {
+  padding: 2.5rem;
+}
+
+.footer .footer-nav .grid-4 ul h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer .footer-nav .grid-4 ul li {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer .footer-nav .grid-4 ul li a {
+  text-transform: none;
+  text-decoration: underline;
+}
+
+.grid-4 {
+  display: grid;
+  gap: 6rem;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.copyright {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  header {
+    background-position: initial;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .information .grid,
+  .services .grid-2,
+  .social-media .grid,
+  footer .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .copyright {
+    padding-top: 4rem;
+  }
+}
