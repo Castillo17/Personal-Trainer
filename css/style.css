@@ -206,7 +206,7 @@ header {
 /* Intro Session */
 .intro {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/img/workout.jpg);
+    url(/img/workout-min.jpg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
